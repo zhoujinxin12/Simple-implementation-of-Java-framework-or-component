@@ -29,11 +29,11 @@ public class TestThreadPool {
         threadPool.execute(new Actor(programme));
         threadPool.execute(new Audience(programme));
 
-        try {
-            Thread.sleep(300);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(300);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         threadPool.shutdown();
     }
 }
@@ -85,7 +85,7 @@ class BlockingQueue<T> {
         try {
             if (isShutdown || deque.size() == capacity) return false;
             deque.addLast(task);
-            emptyWaitSet.signal();
+            emptyWaitSet.signalAll();
             return true;
         } finally {
             lock.unlock();
@@ -100,7 +100,7 @@ class BlockingQueue<T> {
             }
             if (isShutdown) return;
             deque.addLast(task);
-            emptyWaitSet.signal();
+            emptyWaitSet.signalAll();
         } finally {
             lock.unlock();
         }
@@ -153,7 +153,6 @@ class ThreadPool {
             rejectPolicy.reject(taskQueue, task);
             return;
         }
-
         synchronized (workers) {
             // 创建核心线程
             if (workers.size() < corePoolSize) {
@@ -181,9 +180,9 @@ class ThreadPool {
     public void shutdown() {
         synchronized (workers) {
             isShutdown = true;
-            for (Worker worker : workers) {
-                worker.interrupt();
-            }
+//            for (Worker worker : workers) {
+//                worker.interrupt();
+//            }
         }
         taskQueue.shutdown();
     }
