@@ -1,3 +1,8 @@
+/**
+ * @author: 16404
+ * @date: 2025/2/1 10:19
+ **/
+
 public class Semaphore {
     public static void main(String[] args) {
         Programme programme = new Programme();
