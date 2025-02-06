@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a41120ba-29ac-4926-a26a-ee85590aaa26" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MyReadWriteLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleReadWriteLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleThreadPool.md" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleThreadPool.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/Actor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/Audience.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/BlockingQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/Chicken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/Monitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/Programme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/RejectPolicy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/Semaphore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/SynContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/TestThreadPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/ThreadPool$Worker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multithreading/ThreadPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/Actor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/Audience.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/BlockingQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/Chicken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/Monitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/Programme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/RejectPolicy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/Semaphore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/SimpleThreadPool.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/SimpleThreadPool.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/SynContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/TestThreadPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/ThreadPool$Worker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/ThreadPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/img/Mark Word结构.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleThreadPool/img/线程状态转换图.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\study software\apache-maven-3.9.6\repository" />
+        <option name="userSettingsFile" value="D:\study software\apache-maven-3.9.6\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2sOko9RRvEwGtrcsPeQwGH3wF9v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CASDemo.executor": "Run",
+    "Application.MyReadWriteLock.executor": "Run",
+    "Application.ReadWriteLockFairnessTest.executor": "Run",
+    "Application.SimpleReadWriteLockTest.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.TestReadWriteLock.executor": "Run",
+    "Application.TestThreadPool.executor": "Run",
+    "Application.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/project/java_project/handwritten_framework/Simple-implementation-of-Java-framework-or-component/SimpleThreadPool",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.CASDemo">
+    <configuration name="CASDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CASDemo" />
+      <module name="SimpleThreadPool" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyReadWriteLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyReadWriteLock" />
+      <module name="SimpleThreadPool" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadWriteLockFairnessTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReadWriteLockFairnessTest" />
+      <module name="SimpleThreadPool" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleReadWriteLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SimpleReadWriteLockTest" />
+      <module name="SimpleThreadPool" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="SimpleThreadPool" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CASDemo" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ReadWriteLockFairnessTest" />
+        <item itemvalue="Application.SimpleReadWriteLockTest" />
+        <item itemvalue="Application.MyReadWriteLock" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a41120ba-29ac-4926-a26a-ee85590aaa26" name="Changes" comment="" />
+      <created>1738334180884</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738334180884</updated>
+      <workItem from="1738334181944" duration="19133000" />
+      <workItem from="1738472295960" duration="62515000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/SimpleReadWriteLock.java</url>
+          <line>16</line>
+          <properties class="ReadWriteLockFairnessTest" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Test.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -8,9 +8,6 @@ import com.spring.exception.BeansException;
 /**
  * 可配置的列表化bean工厂接口
  * 提供了配置和列举bean的功能
- *
- * @author kama
- * @version 1.0.0
  */
 public interface ConfigurableListableBeanFactory extends ListableBeanFactory, AutowireCapableBeanFactory, ConfigurableBeanFactory {
 

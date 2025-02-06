@@ -6,9 +6,6 @@ import com.spring.exception.BeansException;
 
 /**
  * 提供自动装配能力的bean工厂接口
- *
- * @author kama
- * @version 1.0.0
  */
 public interface AutowireCapableBeanFactory extends BeanFactory {
 

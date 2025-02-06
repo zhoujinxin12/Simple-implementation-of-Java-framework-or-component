@@ -98,6 +98,13 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
         }
     }
 
+    /**
+     * 将BeanDefinition对象注册打破BeanDefinition容器中
+     * 容器中beanName是Key，beanDefinition是Value
+     * @param beanName bean名称
+     * @param beanDefinition bean定义
+     * @throws BeansException
+     */
     @Override
     public void registerBeanDefinition(String beanName, BeanDefinition beanDefinition) throws BeansException {
         Objects.requireNonNull(beanName, "Bean name must not be null");
@@ -129,6 +136,10 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
         logger.debug("Registered bean definition for bean named '{}'", beanName);
     }
 
+    /**
+     * 销毁某个单例bean需要销毁缓存中的内容
+     * @param beanName
+     */
     protected void cleanupSingletonCache(String beanName) {
         synchronized (this.singletonObjects) {
             // 从所有缓存中移除
@@ -149,14 +160,63 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
         }
     }
 
+    /**
+     * 将创建好的单例bean加入一级缓存中
+     * @param beanName bean名称
+     * @param singletonObject bean实例
+     */
+    @Override
+    public void registerSingleton(String beanName, Object singletonObject) {
+        this.singletonObjects.put(beanName, singletonObject);
+        logger.debug("Registered singleton bean named '{}'", beanName);
+    }
+
+    @Override
+    public Object getSingleton(String beanName) {
+        return getSingleton(beanName, true);
+    }
+
+    @Override
+    public boolean containsSingleton(String beanName) {
+        return this.singletonObjects.containsKey(beanName);
+    }
+    @Override
+    public String[] getSingletonNames() {
+        return this.singletonObjects.keySet().toArray(new String[0]);
+    }
+
+    @Override
+    public int getSingletonCount() {
+        return this.singletonObjects.size();
+    }
+
     @Override
     public void removeBeanDefinition(String beanName) throws BeansException {
-
+        if (!containsBeanDefinition(beanName)) {
+            throw new BeansException("No bean named '" + beanName + "' is defined");
+        }
+        this.beanDefinitionMap.remove(beanName);
+        this.beanDefinitionNames.remove(beanName);
+        logger.debug("Removed bean definition for bean named '{}'", beanName);
     }
 
     @Override
     public BeanDefinition getBeanDefinition(String beanName) throws BeansException {
-        return null;
+        // beanName可能是别名，通过canonicalName函数可以获得规范的名字
+        String canonicalName = canonicalName(beanName);
+        BeanDefinition bd = this.beanDefinitionMap.get(canonicalName);
+        if (bd == null) {
+            if (getParentBeanFactory() instanceof DefaultListableBeanFactory) {
+                return ((DefaultListableBeanFactory) getParentBeanFactory()).getBeanDefinition(canonicalName);
+            }
+            throw new BeansException("No bean named '" + beanName + "' is defined");
+        }
+        // 如果有合并的bean定义，返回合并后的
+        BeanDefinition mergedBd = this.mergedBeanDefinitions.get(canonicalName);
+        if (mergedBd != null) {
+            return mergedBd;
+        }
+        return bd;
     }
 
     @Override
@@ -302,26 +362,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
     @Override
     public boolean isPrototype(String name) {
         return false;
-    }
-
-    @Override
-    public boolean containsSingleton(String beanName) {
-        return false;
-    }
-
-    @Override
-    public String[] getSingletonNames() {
-        return new String[0];
-    }
-
-    @Override
-    public int getSingletonCount() {
-        return 0;
-    }
-
-    @Override
-    public Object getSingleton(String beanName) {
-        return getSingleton(beanName, true);
     }
 
     protected Object getSingleton(String beanName, boolean allowEarlyReference) {

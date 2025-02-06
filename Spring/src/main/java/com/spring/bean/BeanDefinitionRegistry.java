@@ -7,9 +7,6 @@ import com.spring.exception.BeansException;
 /**
  * Bean定义注册表接口
  * 定义了注册和获取bean定义的基本操作
- *
- * @author kama
- * @version 1.0.0
  */
 public interface BeanDefinitionRegistry {
 
